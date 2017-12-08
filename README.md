@@ -16,10 +16,11 @@ _{Beep Boop web application contains functionalities that allow users to enter a
 | **Program recognizes numbers that contain 1.** | 21 | true|
 | ****Program recognizes numbers that contain 0.** | 40 | true |
 | **Program recognizes numbers divisible by 3** | 27 | true |
+| **Program creates a list of numbers starting at 0 and ending with the number entered by the user** | 4 | [0,1,2,3,4] |
 | **Program replaces numbers that contain 1 by the word Boop** | 11 | Boop! |
 | **Program replaces numbers that contain 0 by the word Beep** | 10 | Beep! |
 | **Program replaces numbers divisible by 3 by the sentence "I'm sorry, Dave. I'm afraid I can't do that."** | 9 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| **Program creates a list of numbers starting at 0 and ending with the number entered by the user** | 4 | [0,1,2,3,4] |
+
 
 
 
