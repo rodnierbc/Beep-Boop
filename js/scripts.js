@@ -1,8 +1,12 @@
 //Definition of the constants of my program
 const BOOP = 'Boop!';
 const BEEP = 'Beep!';
-const SORRY_MESSAGE = "I'm sorry,";
-const IMPOSSIBLE_MESSAGE = "I'm afraid I can't do that.";
+const SORRY_MESSAGE = "I'm sorry, ";
+const IMPOSSIBLE_MESSAGE = " I'm afraid I can't do that.";
+const NUMBER_ONE = "1";
+const NUMBER_ZERO = "0";
+const NUMBER_THREE = "3";
+var userName = "Rodnier";
 
 //This function eliminates the first occurrence of the symbol - in a string
 function deleteNegativeSymbol(number){
@@ -35,7 +39,14 @@ function isValidNumber(number){
 }
 //This function returns a call to the includes () function to know if a substring is contained in another string.
 function containsChar(number, char){
-  return number.includes(char);
+  number = number.toString();
+  char = char.toString();
+  if(number.indexOf(char) !== -1){
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 function isDivisible(num1, num2){
   num1 = parseInt(num1);
@@ -52,24 +63,32 @@ function rangeNumbers(number){
 }
 function replace(numbers){
   for(i=0; i<numbers.length; i++){
-    if(numbers[i])
+    if(containsChar(numbers[i], NUMBER_ZERO)){
+      numbers[i] = BEEP;
+    }
+    else if (containsChar(numbers[i], NUMBER_ONE)) {
+      numbers[i] = BOOP;
+    }
+    else if (isDivisible(numbers[i], NUMBER_THREE)) {
+      numbers[i] = SORRY_MESSAGE+userName+IMPOSSIBLE_MESSAGE;
+    }
   }
+  return numbers;
 }
-
-
-
-
-
-
-
+function beepBoop(number){
+  var numbers =[];
+  number = deleteNegativeSymbol(number);
+  number = removeZeros(number);
+  if(isValidNumber(number)){
+    numbers = replace(rangeNumbers(number));
+  }
+  return numbers;
+}
 
 $(function(){
   $('#numberForm').submit(function(event){
     event.preventDefault();
     var number = $('#enterNumber').val();
-    var number = deleteNegativeSymbol(number);
-    var number = removeZeros(number);
-    alert(isValidNumber(number));
-    alert(number);
+    alert(beepBoop(number));
   });
 })
