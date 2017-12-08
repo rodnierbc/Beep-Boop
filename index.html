@@ -10,25 +10,50 @@
   <script src="js/scripts.js"></script>
 </head>
   <body>
-    <div class="container-fluid">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-3">Beep Boop</h1>
-          <p class="lead">Fill out the form below.</p>
-           <hr class="my-4">
-           <form id="numberForm">
-            <div class="form-row">
-                <input id="enterNumber" type="text" class="form-control" placeholder="Enter a number">
-            </div>
-            <button type="submit" class="btn btn-primary mt-4">Submit</button>
-          </form>
-          <div class="container-fluid d-flex justify-content-center">
-            <div class="panel" id="">
-              <p id="listNumbers"></p>
-            </div>
+    <div class="container">
+      <div class="row jumbotron">
+        <div class="row">
+          <div class="col-md-12 title">
+            <h1>welcome to Beep Boop</h1>
           </div>
         </div>
-        </div>
+    		<form id="registerForm">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+        				<div class="col-md-6">
+        					<div class="form-group">
+                    <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+        					</div>
+        				</div>
+        				<div class="col-md-6">
+        					<div class="form-group">
+        						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+        					</div>
+        				</div>
+        			</div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+            				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+            			</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input type="submit" value="Register to start" class="btn btn-info btn-block">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="" alt="Responsive image">
+                   <img src="img/numbers.jpg">
+                 </div>
+              </div>
+            </div>
+          </div>
+    		</form>
       </div>
     </div>
   </body>

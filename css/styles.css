@@ -1,0 +1,21 @@
+.jumbotron{
+    background-color: #000105;
+    text-align: center;
+    color: #bab9b8;
+}
+.centered-form{
+	margin-top: 60px;
+}
+img{
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+.title{
+  padding-bottom: 20px;
+}

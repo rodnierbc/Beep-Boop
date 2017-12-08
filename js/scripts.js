@@ -6,7 +6,10 @@ const IMPOSSIBLE_MESSAGE = " I'm afraid I can't do that.";
 const NUMBER_ONE = "1";
 const NUMBER_ZERO = "0";
 const NUMBER_THREE = "3";
+
+//Definition of global variables
 var userName = "Rodnier";
+var user = [];
 
 //This function eliminates the first occurrence of the symbol - in a string
 function deleteNegativeSymbol(number){
@@ -83,6 +86,10 @@ function beepBoop(number){
     numbers = replace(rangeNumbers(number));
   }
   return numbers;
+}
+
+function register(name, phoneNumber){
+  
 }
 
 $(function(){
