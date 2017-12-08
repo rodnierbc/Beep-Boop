@@ -12,6 +12,7 @@ _{Beep Boop web application contains functionalities that allow users to enter a
 | Spec | Input | Output |
 | :-------------------- | :------------------- | :------------------------ |
 | **Program accepts as input to negative numbers but converts them into positives before processing it** | -12 | 12 |
+| **Program accepts numbers that start in one or more zeros** | 0000120 | 120 |
 | **Program recognizes numbers that contain 1.** | 21 | true|
 | ****Program recognizes numbers that contain 0.** | 40 | true |
 | **Program recognizes numbers divisible by 3** | 27 | true |
