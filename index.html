@@ -63,14 +63,31 @@
               <h1 id="greetingsTitle"></h1>
                <hr class="my-4">
                 <form id="numberForm">
-                  <div class="form-row">
-                      <input id="enterNumber" type="number" class="form-control" placeholder="Enter a number">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input id="enterNumber" type="number" class="form-control" placeholder="Enter a number">
+                      </div>
+                    </div>
                   </div>
-                  <input type="submit" value="start" class="btn btn-info btn-block">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="submit" value="start" class="btn btn-info btn-block">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="button" id="done" value="Done" class="btn btn-info btn-block">
+                      </div>
+                    </div>
+                  </div>
                 </form>
-                <div class="container-fluid d-flex justify-content-center">
-                  <div class="panel" id="">
-                    <p id="beepBoop"></p>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <p id="beepBoop"></p>
+                    </div>
                   </div>
                 </div>
             </div>

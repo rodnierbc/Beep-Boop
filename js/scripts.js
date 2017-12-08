@@ -93,6 +93,9 @@ function register(name, lastName, email){
   user['email'] = email;
   return true;
 }
+function done(){
+  location.reload(true);
+}
 
 $(function(){
   $('#numberForm').submit(function(event){
@@ -108,5 +111,8 @@ $(function(){
     $('#registerContent').toggle();
     $('#beepBoopPlay').toggle();
     $('#greetingsTitle').text("Hello "+user['name']+" "+user['lastName']+ ", you are redy to start!!!");
+  });
+  $('#done').click(function(){
+    done();
   });
 })
