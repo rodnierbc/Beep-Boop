@@ -88,14 +88,24 @@ function beepBoop(number){
   return numbers;
 }
 
-function register(name, phoneNumber){
-  
+function register(name, lastName, email){
+  user['name'] = name;
+  user['lastName'] = lastName;
+  user['email'] = email;
+  return true;
 }
 
 $(function(){
   $('#numberForm').submit(function(event){
     event.preventDefault();
     var number = $('#enterNumber').val();
-    alert(beepBoop(number));
+    //alert(beepBoop(number));
+  });
+  $('#registerForm').submit(function(event){
+    event.preventDefault();
+    if(!register($('#name').val(), $('#lastName').val(), $('#email').val())){
+      alert("try again");
+    }
+    alert(user['name']+user['lastName']);
   });
 })
