@@ -11,49 +11,71 @@
 </head>
   <body>
     <div class="container">
-      <div class="row jumbotron">
-        <div class="row">
-          <div class="col-md-12 title">
-            <h1>welcome to Beep Boop</h1>
+      <div id="registerContent">
+        <div class="row jumbotron">
+          <div class="row">
+            <div class="col-md-12 title">
+              <h1>Welcome to Beep Boop</h1>
+            </div>
+          </div>
+      		<form id="registerForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+          				<div class="col-md-6">
+          					<div class="form-group">
+                      <input type="text" name="first_name" id="name" class="form-control input-sm" placeholder="First Name">
+          					</div>
+          				</div>
+          				<div class="col-md-6">
+          					<div class="form-group">
+          						<input type="text" name="last_name" id="lastName" class="form-control input-sm" placeholder="Last Name">
+          					</div>
+          				</div>
+          			</div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+              				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+              			</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <input type="submit" value="Register to start" class="btn btn-info btn-block">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="" alt="Responsive image">
+                     <img src="img/numbers.jpg">
+                   </div>
+                </div>
+              </div>
+            </div>
+      		</form>
+        </div>
+      </div>
+      <div id="beepBoopPlay">
+         <div class="jumbotron">
+            <div class="container">
+              <h1 id="greetingsTitle"></h1>
+               <hr class="my-4">
+                <form id="numberForm">
+                  <div class="form-row">
+                      <input id="enterNumber" type="number" class="form-control" placeholder="Enter a number">
+                  </div>
+                  <input type="submit" value="start" class="btn btn-info btn-block">
+                </form>
+                <div class="container-fluid d-flex justify-content-center">
+                  <div class="panel" id="">
+                    <p id="beepBoop"></p>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
-    		<form id="registerForm">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row">
-        				<div class="col-md-6">
-        					<div class="form-group">
-                    <input type="text" name="first_name" id="name" class="form-control input-sm" placeholder="First Name">
-        					</div>
-        				</div>
-        				<div class="col-md-6">
-        					<div class="form-group">
-        						<input type="text" name="last_name" id="lastName" class="form-control input-sm" placeholder="Last Name">
-        					</div>
-        				</div>
-        			</div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-            				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
-            			</div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <input type="submit" value="Register to start" class="btn btn-info btn-block">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="" alt="Responsive image">
-                   <img src="img/numbers.jpg">
-                 </div>
-              </div>
-            </div>
-          </div>
-    		</form>
       </div>
     </div>
   </body>

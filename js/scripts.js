@@ -73,7 +73,7 @@ function replace(numbers){
       numbers[i] = BOOP;
     }
     else if (isDivisible(numbers[i], NUMBER_THREE)) {
-      numbers[i] = SORRY_MESSAGE+userName+IMPOSSIBLE_MESSAGE;
+      numbers[i] = SORRY_MESSAGE+user['name']+IMPOSSIBLE_MESSAGE;
     }
   }
   return numbers;
@@ -87,7 +87,6 @@ function beepBoop(number){
   }
   return numbers;
 }
-
 function register(name, lastName, email){
   user['name'] = name;
   user['lastName'] = lastName;
@@ -99,13 +98,15 @@ $(function(){
   $('#numberForm').submit(function(event){
     event.preventDefault();
     var number = $('#enterNumber').val();
-    //alert(beepBoop(number));
+      $('#beepBoop').text(beepBoop(number));
   });
   $('#registerForm').submit(function(event){
     event.preventDefault();
     if(!register($('#name').val(), $('#lastName').val(), $('#email').val())){
       alert("try again");
     }
-    alert(user['name']+user['lastName']);
+    $('#registerContent').toggle();
+    $('#beepBoopPlay').toggle();
+    $('#greetingsTitle').text("Hello "+user['name']+" "+user['lastName']+ ", you are redy to start!!!");
   });
 })
