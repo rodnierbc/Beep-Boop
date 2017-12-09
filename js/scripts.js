@@ -100,6 +100,7 @@ function done(){
 $(function(){
   $('#numberForm').submit(function(event){
     event.preventDefault();
+    $('#beepBoopList').empty();
     var number = $('#enterNumber').val();
     var wayToShow = $("input:radio[name=wayToShow]:checked").val();
     if(wayToShow === '0'){
