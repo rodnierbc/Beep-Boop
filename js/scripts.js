@@ -101,7 +101,19 @@ $(function(){
   $('#numberForm').submit(function(event){
     event.preventDefault();
     var number = $('#enterNumber').val();
+    var wayToShow = $("input:radio[name=wayToShow]:checked").val();
+    if(wayToShow === '0'){
+      beepBoop(number).forEach(function(listItem) {
+        $('#paragraph').hide();
+        $('#list').show();
+      $('#beepBoopList').append('<li class="list-group-item">' + listItem + '</li>');
+    });
+    }
+    else if (wayToShow === '1') {
+      $('#list').hide();
+      $('#paragraph').show();
       $('#beepBoop').text(beepBoop(number));
+    }
   });
   $('#registerForm').submit(function(event){
     event.preventDefault();
