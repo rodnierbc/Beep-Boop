@@ -1,7 +1,7 @@
 # _Beep Boop_
 
 #### _{Beep-Boop. Friday's Project.}, {12.8.17}_
-https://rodnierbc.github.io/beep-boop
+[Beep Boop](https://rodnierbc.github.io/Beep-Boop/)
 #### By _**{Rodnier Borrego}**_
 
 ## Description
