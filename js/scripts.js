@@ -107,7 +107,7 @@ $(function(){
       beepBoop(number).forEach(function(listItem) {
         $('#paragraph').hide();
         $('#list').show();
-      $('#beepBoopList').append('<li class="list-group-item">' + listItem + '</li>');
+      $('#beepBoopList').append('<li>' + listItem + '</li>');
     });
     }
     else if (wayToShow === '1') {

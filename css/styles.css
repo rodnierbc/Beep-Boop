@@ -22,3 +22,6 @@ img{
 #beepBoopPlay, #paragraph, #list{
   display: none;
 }
+li{
+  text-align: left;
+}
